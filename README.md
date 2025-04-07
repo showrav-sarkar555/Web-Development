@@ -1,59 +1,75 @@
-# 🌐 Basic Web Structure Project  
+# 🌐 Web Development: Basic HTML Structure Project  
 
 ### 📝 **Project Description**  
-This repository contains foundational **HTML files** for building websites. 🏗️ Currently implemented **without CSS or JavaScript**, these files demonstrate:  
+This repository contains foundational **HTML files** for building modern websites. 🏗️  
+Currently built **without CSS or JavaScript**, this project demonstrates:
+
 ✔️ **Proper HTML5 structure**  
 ✔️ **Semantic markup**  
-✔️ **Clean, scalable code** ready for future enhancements!  
+✔️ **Clean, scalable code** — ready for styling and scripting!
 
 ---
 
 ## 🚀 **Current Implementation**  
-🔹 **Pure HTML5** documents  
-🔹 **Semantic elements** (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)  
-🔹 **Multi-page templates** (Home, About, Contact, Services)  
-🔹 **Well-organized markup** for easy CSS/JS integration  
+🔹 Pure **HTML5** documents  
+🔹 Semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)  
+🔹 **Multi-page structure** — Home, About, Contact, Services  
+🔹 **Clean, readable markup** — easy to maintain and extend  
 
 ---
 
-## 📂 **File Structure**  
+## 📂 **Project File Structure**
 ```
 Web-Development/
-├── 📄 index.html          → Homepage (Main entry)  
-├── 📄 about.html          → About page  
-├── 📄 contact.html        → Contact form template  
-├── 📄 services.html       → Services listing  
-└── 📄 README.md           → Project guide (you're here!)  
-```  
+├── index.html        → Homepage  
+├── about.html        → About page  
+├── contact.html      → Contact form  
+├── services.html     → Services overview  
+└── README.md         → Project description  
+```
 
 ---
 
 ## 🔑 **Key Features**  
-✅ **Semantic HTML** → Better SEO & accessibility  
-✅ **Clean Structure** → Easy to maintain & expand  
-✅ **Multi-page Navigation** → Linked pages for full websites  
-✅ **Future-Ready** → Perfect base for adding CSS & JS  
+✅ **Semantic HTML** — Better SEO, accessibility & structure  
+✅ **Clean codebase** — Easy to scale with CSS/JS  
+✅ **Multi-page website** — Real-world structure  
+✅ **Beginner-friendly** — Perfect for first projects  
 
 ---
 
-## 🛠️ **Usage Instructions**  
-1. **Clone/download** the repo  
-2. **Open any `.html` file** in a browser (Chrome/Firefox)  
-3. **Inspect code** to see semantic markup best practices  
+## 🛠️ **How to Use**  
+1. **Clone or download** this repository  
+2. Open any `.html` file in your browser  
+3. Explore the code to understand HTML5 best practices  
 
 ---
 
 ## 🔮 **Next Steps (Coming Soon!)**  
-🎨 **CSS Styling** → Colors, layouts, animations  
-📱 **Responsive Design** → Mobile-friendly pages  
-⚡ **JavaScript** → Interactive elements & form validation  
-🖼️ **Multimedia** → Images, videos, icons  
+🎨 CSS Styling — layouts, colors, animations  
+📱 Responsive Design — mobile-friendly views  
+⚡ JavaScript — form validation & interactivity  
+🖼️ Multimedia — images, icons, audio/video  
 
 ---
 
-## ❓ **Why Start with HTML Only?**  
-🌟 **Strong foundation** → Better performance & SEO  
-🌟 **Easier debugging** → Fix structure before styling  
-🌟 **Progressive Enhancement** → Add features step-by-step  
+## ❓ **Why Start with Just HTML?**  
+🌟 Builds a **strong foundation**  
+🌟 Encourages **progressive enhancement**  
+🌟 Easier **debugging and learning**  
 
-🚧 **Work in Progress!** More exciting updates coming soon with **CSS & JS**! 🎉  
+---
+
+## 🌐 **Live Preview** *(Coming Soon)*  
+🔗 **Live Link:** _[To be added after deployment]_  
+
+---
+
+## 👤 **Author**  
+**Showrav Sarkar**  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/showrav-sarkar)
+
+---
+
+> 📅 **Day 2 Progress:** HTML Structure ✅ | CSS Integration 🔜  
+> Stay tuned for styling and responsive updates!
