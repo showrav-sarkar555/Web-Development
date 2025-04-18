@@ -1,0 +1,37 @@
+.drop{
+    display: inline-block;
+}
+.drop button{
+    padding: 7px 15px;
+    background-color: rgb(216, 216, 216);
+    border: none;
+    cursor: pointer;
+}
+.drop a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.drop .options{
+    background-color: aquamarine;
+    position: relative;
+    display: none;
+    min-width:100px ;
+    box-shadow: 5px 5px 3px;
+}
+.drop:hover .options{
+    display: block;
+
+}
+.drop:hover button{
+    background-color: black;
+    color: wheat;
+}
+.drop .options a:hover{
+    background-color: rgb(75, 9, 9);
+    color: white;
+}
+p{
+
+}

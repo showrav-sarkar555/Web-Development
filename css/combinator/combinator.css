@@ -1,0 +1,20 @@
+#container {
+  border: 2px solid;
+}
+#container p {
+  /*descendant*/
+  background-color: bisque;
+}
+#container > p /*child*/ {
+  background-color: red;
+}
+#container ~ p {
+  /*generall sibling*/
+  background-color: green;
+}
+
+/*adjacent sibling
+
+#container +p{
+next line to present div
+*/

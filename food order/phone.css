@@ -1,0 +1,110 @@
+/* Responsive adjustments for max width 1000px */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+#nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav ul {
+  flex-direction: column;
+}
+
+#nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Home Section */
+#home {
+  padding: 20px;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+}
+
+#home::before {
+  height: 480px;
+}
+
+#home p {
+  font-size: 1rem;
+}
+
+/* Services Section */
+#services {
+  flex-direction: column;
+}
+
+#services .box {
+  margin: 10px;
+  width: 90%;
+}
+
+/* Clients Section */
+#clients-container {
+  height: auto;
+  padding: 20px;
+}
+
+#clients {
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  height: auto;
+  padding: 10px 0;
+}
+
+.client-box {
+  transition: transform 0.3s ease;
+}
+
+.client-box:hover {
+  transform: scale(1.1);
+}
+
+.client-box img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Contact Section */
+#contact-container {
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact-container .form {
+  width: 90%;
+}
+
+#contact-container input,
+#contact-container textarea {
+  font-size: 1rem;
+  padding: 8px;
+  width: 100%;
+}
+
+#contact-container label {
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Footer */
+footer .center {
+  font-size: 0.9rem;
+  padding: 15px;
+}

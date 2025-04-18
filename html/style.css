@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  margin-top: -20px;
+}
+main {
+  color: rgb(243, 240, 234);
+}
+header {
+  background-color: wheat;
+  width: 2000px;
+}
+a {
+  text-decoration: none;
+}

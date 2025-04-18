@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Complete Guide</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      h1 {
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      h2 {
+        background-color: #f8f9fa;
+        padding: 8px;
+        border-left: 4px solid #3498db;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+      }
+      th {
+        background-color: #3498db;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      code {
+        background-color: #f8f9fa;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+      .note {
+        background-color: #e7f5fe;
+        padding: 15px;
+        border-left: 4px solid #3498db;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📝 HTML & CSS Complete Guide</h1>
+
+    <h2>✅ Section 1: HTML Basics</h2>
+    <h3>🔹 What is HTML?</h3>
+    <p>
+      <strong>HTML (HyperText Markup Language)</strong> is the standard language
+      used to <strong>structure</strong> web pages. It uses
+      <strong>tags</strong> to describe content.
+    </p>
+
+    <h3>🔹 Basic HTML Document Structure:</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Why & When to Use</th>
+      </tr>
+      <tr>
+        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+        <td>Declares HTML5 version</td>
+        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+        <td>Must be first line; tells browser the HTML version.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;html&gt;</code></td>
+        <td>Root element</td>
+        <td><code>&lt;html&gt;...&lt;/html&gt;</code></td>
+        <td>Wraps all page content.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;head&gt;</code></td>
+        <td>Metadata, links, scripts</td>
+        <td>
+          <code>&lt;head&gt;&lt;title&gt;Title&lt;/title&gt;&lt;/head&gt;</code>
+        </td>
+        <td>SEO, CSS links, scripts go here.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;body&gt;</code></td>
+        <td>Visible page content</td>
+        <td>
+          <code>&lt;body&gt;&lt;h1&gt;Heading&lt;/h1&gt;&lt;/body&gt;</code>
+        </td>
+        <td>Everything user sees lives here.</td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 2: Text & Link Elements</h2>
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Why & When to Use</th>
+      </tr>
+      <tr>
+        <td><code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code></td>
+        <td>Headings (h1 is largest)</td>
+        <td><code>&lt;h1&gt;Title&lt;/h1&gt;</code></td>
+        <td>Use for proper document structure and SEO.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;p&gt;</code></td>
+        <td>Paragraph</td>
+        <td><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></td>
+        <td>For regular text content.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;a&gt;</code></td>
+        <td>Anchor/hyperlink</td>
+        <td>
+          <code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code>
+        </td>
+        <td>For navigation, linking to pages.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;br&gt;</code></td>
+        <td>Line break</td>
+        <td><code>Line1&lt;br&gt;Line2</code></td>
+        <td>Avoid for spacing—use only for poems, addresses.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;strong&gt;</code></td>
+        <td>Strong/bold text</td>
+        <td><code>&lt;strong&gt;Important&lt;/strong&gt;</code></td>
+        <td>Semantically important bold text.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;em&gt;</code></td>
+        <td>Emphasized/italic text</td>
+        <td><code>&lt;em&gt;Note&lt;/em&gt;</code></td>
+        <td>Semantically emphasized text.</td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 3: Lists</h2>
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Why & When to Use</th>
+      </tr>
+      <tr>
+        <td><code>&lt;ul&gt;</code></td>
+        <td>Unordered list</td>
+        <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+        <td>Bullet points, unordered info.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;ol&gt;</code></td>
+        <td>Ordered list</td>
+        <td><code>&lt;ol&gt;&lt;li&gt;Step&lt;/li&gt;&lt;/ol&gt;</code></td>
+        <td>Step-by-step, numbered tasks.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;li&gt;</code></td>
+        <td>List item</td>
+        <td><code>&lt;li&gt;Point&lt;/li&gt;</code></td>
+        <td>Used inside <code>ul</code>, <code>ol</code>.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;dl&gt;</code></td>
+        <td>Description list</td>
+        <td>
+          <code
+            >&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Markup&lt;/dd&gt;&lt;/dl&gt;</code
+          >
+        </td>
+        <td>Glossary, FAQs.</td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 4: Images & Media</h2>
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Why & When to Use</th>
+      </tr>
+      <tr>
+        <td><code>&lt;img&gt;</code></td>
+        <td>Embeds image</td>
+        <td><code>&lt;img src="cat.jpg" alt="cat"&gt;</code></td>
+        <td>Add visuals, branding. Always use <code>alt</code>.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;video&gt;</code></td>
+        <td>Embeds video</td>
+        <td>
+          <code
+            >&lt;video controls&gt;&lt;source
+            src="video.mp4"&gt;&lt;/video&gt;</code
+          >
+        </td>
+        <td>Tutorials, media-rich sites.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;audio&gt;</code></td>
+        <td>Embeds audio</td>
+        <td>
+          <code
+            >&lt;audio controls&gt;&lt;source
+            src="song.mp3"&gt;&lt;/audio&gt;</code
+          >
+        </td>
+        <td>Background music, podcasts.</td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 5: Forms & Inputs</h2>
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Why & When to Use</th>
+      </tr>
+      <tr>
+        <td><code>&lt;form&gt;</code></td>
+        <td>Form wrapper</td>
+        <td><code>&lt;form action="submit.php"&gt;...&lt;/form&gt;</code></td>
+        <td>For collecting user input.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;input&gt;</code></td>
+        <td>Various fields</td>
+        <td><code>&lt;input type="text"&gt;</code></td>
+        <td>Text, checkbox, radio, etc.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;textarea&gt;</code></td>
+        <td>Multi-line input</td>
+        <td><code>&lt;textarea&gt;&lt;/textarea&gt;</code></td>
+        <td>Long text like messages.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;button&gt;</code></td>
+        <td>Button element</td>
+        <td><code>&lt;button&gt;Submit&lt;/button&gt;</code></td>
+        <td>Submit forms, click actions.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;label&gt;</code></td>
+        <td>Field label</td>
+        <td><code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></td>
+        <td>Improves accessibility and UX.</td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 6: Semantic HTML</h2>
+    <table>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Why & When to Use</th>
+      </tr>
+      <tr>
+        <td><code>&lt;header&gt;</code></td>
+        <td>Page header</td>
+        <td><code>&lt;header&gt;...&lt;/header&gt;</code></td>
+        <td>Intro content, logo, nav bar.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;nav&gt;</code></td>
+        <td>Navigation links</td>
+        <td><code>&lt;nav&gt;&lt;a&gt;...&lt;/a&gt;&lt;/nav&gt;</code></td>
+        <td>Site menus, internal links.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;section&gt;</code></td>
+        <td>Page sections</td>
+        <td><code>&lt;section&gt;...&lt;/section&gt;</code></td>
+        <td>Group content by topic.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;article&gt;</code></td>
+        <td>Standalone content</td>
+        <td><code>&lt;article&gt;Blog&lt;/article&gt;</code></td>
+        <td>News, blog posts.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;aside&gt;</code></td>
+        <td>Side info</td>
+        <td><code>&lt;aside&gt;Tip&lt;/aside&gt;</code></td>
+        <td>Ads, side notes.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;footer&gt;</code></td>
+        <td>Bottom section</td>
+        <td><code>&lt;footer&gt;Copyright&lt;/footer&gt;</code></td>
+        <td>End of page info.</td>
+      </tr>
+    </table>
+
+    <div class="note">
+      <h3>🔸 Why use semantic HTML?</h3>
+      <ul>
+        <li>Improves SEO</li>
+        <li>Easier to read code</li>
+        <li>Screen readers can navigate properly</li>
+      </ul>
+    </div>
+
+    <h2>✅ Section 7: CSS Overview</h2>
+    <h3>🔹 What is CSS?</h3>
+    <p>
+      <strong>CSS (Cascading Style Sheets)</strong> controls how HTML elements
+      look: colors, layout, size, fonts, and more.
+    </p>
+
+    <h3>🔹 Ways to Apply CSS:</h3>
+    <table>
+      <tr>
+        <th>Method</th>
+        <th>Syntax</th>
+        <th>Use When</th>
+      </tr>
+      <tr>
+        <td>Inline</td>
+        <td><code>&lt;p style="color:red;"&gt;</code></td>
+        <td>Small changes or testing only.</td>
+      </tr>
+      <tr>
+        <td>Internal</td>
+        <td><code>&lt;style&gt;...&lt;/style&gt;</code></td>
+        <td>Small single-file projects.</td>
+      </tr>
+      <tr>
+        <td>External</td>
+        <td><code>&lt;link rel="stylesheet"&gt;</code></td>
+        <td>Best for large sites, reusable styles.</td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 8: Common CSS Properties</h2>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>What It Does</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>color</code></td>
+        <td>Text color</td>
+        <td><code>color: blue;</code></td>
+      </tr>
+      <tr>
+        <td><code>background-color</code></td>
+        <td>Background color</td>
+        <td><code>background-color: pink;</code></td>
+      </tr>
+      <tr>
+        <td><code>font-size</code></td>
+        <td>Text size</td>
+        <td><code>font-size: 20px;</code></td>
+      </tr>
+      <tr>
+        <td><code>font-family</code></td>
+        <td>Font style</td>
+        <td><code>font-family: Arial;</code></td>
+      </tr>
+      <tr>
+        <td><code>margin</code></td>
+        <td>Space outside</td>
+        <td><code>margin: 10px;</code></td>
+      </tr>
+      <tr>
+        <td><code>padding</code></td>
+        <td>Space inside</td>
+        <td><code>padding: 15px;</code></td>
+      </tr>
+      <tr>
+        <td><code>border</code></td>
+        <td>Border style</td>
+        <td><code>border: 1px solid black;</code></td>
+      </tr>
+      <tr>
+        <td><code>text-align</code></td>
+        <td>Align text</td>
+        <td><code>text-align: center;</code></td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 9: Box Model Explained</h2>
+    <p>Each HTML element is a box with layers:</p>
+    <pre>
+[ margin ]   ← space outside the element
+[ border ]   ← boundary of the box
+[ padding ]  ← space inside border
+[ content ]  ← actual text or image</pre
+    >
+    <div class="note">
+      <p>🔹 Understand this to fix spacing/layout issues.</p>
+    </div>
+
+    <h2>✅ Section 10: Layout with Display, Flexbox & Grid</h2>
+    <h3>🔹 Display Types</h3>
+    <table>
+      <tr>
+        <th>Value</th>
+        <th>What It Does</th>
+      </tr>
+      <tr>
+        <td><code>block</code></td>
+        <td>Fills full width (div, p)</td>
+      </tr>
+      <tr>
+        <td><code>inline</code></td>
+        <td>Stays inline (span, a)</td>
+      </tr>
+      <tr>
+        <td><code>flex</code></td>
+        <td>Flexible box layout</td>
+      </tr>
+      <tr>
+        <td><code>grid</code></td>
+        <td>Two-dimensional layout</td>
+      </tr>
+    </table>
+
+    <h3>🔹 Flexbox Example:</h3>
+    <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+    <p>📌 Use for horizontal/vertical layout control easily.</p>
+
+    <h3>🔹 Grid Example:</h3>
+    <pre><code>.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}</code></pre>
+    <p>📌 Use grid for column/row placement and structure.</p>
+
+    <h2>✅ Section 11: Advanced CSS – Transitions, Transforms & Animations</h2>
+    <h3>🔹 Transitions:</h3>
+    <pre><code>a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: red;
+}</code></pre>
+    <p>👉 Adds smooth change effects.</p>
+
+    <h3>🔹 Transform:</h3>
+    <pre><code>div {
+  transform: rotate(20deg);
+}</code></pre>
+    <p>👉 Rotate, move, scale elements.</p>
+
+    <h3>🔹 Animation:</h3>
+    <pre><code>@keyframes slide {
+  from { left: 0; }
+  to { left: 100px; }
+}
+div {
+  animation: slide 1s ease-in-out;
+}</code></pre>
+    <p>👉 Create moving graphics, banners, loaders.</p>
+
+    <h2>✅ Section 12: Pseudo-Classes & Elements</h2>
+    <table>
+      <tr>
+        <th>Selector</th>
+        <th>What It Does</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>:hover</code></td>
+        <td>On mouse over</td>
+        <td><code>button:hover { ... }</code></td>
+      </tr>
+      <tr>
+        <td><code>:focus</code></td>
+        <td>Input in focus</td>
+        <td><code>input:focus { ... }</code></td>
+      </tr>
+      <tr>
+        <td><code>::before</code></td>
+        <td>Content before element</td>
+        <td><code>p::before { content: '*'; }</code></td>
+      </tr>
+      <tr>
+        <td><code>::after</code></td>
+        <td>Content after element</td>
+        <td><code>p::after { content: '!'; }</code></td>
+      </tr>
+    </table>
+
+    <h2>✅ Section 13: Responsive Design with Media Queries</h2>
+    <pre><code>@media (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+}</code></pre>
+    <p>
+      📱 Makes website mobile/tablet friendly by changing styles at certain
+      screen sizes.
+    </p>
+
+    <h2>✅ Section 14: Comments in Code</h2>
+    <ul>
+      <li>HTML comment: <code>&lt;!-- This is a comment --&gt;</code></li>
+      <li>CSS comment: <code>/* This is a CSS comment */</code></li>
+    </ul>
+    <p>📌 Use comments to explain code for yourself or others.</p>
+
+    <h2>✅ Section 15: Accessibility & SEO Best Practices</h2>
+    <ul>
+      <li>✅ Use <code>alt</code> text for all images.</li>
+      <li>✅ Structure pages using <code>h1 → h6</code> properly.</li>
+      <li>
+        ✅ Use semantic tags like <code>section</code>, <code>article</code>,
+        <code>footer</code>.
+      </li>
+      <li>✅ Use meta tags in <code>&lt;head&gt;</code> for SEO.</li>
+      <li>
+        ✅ Use <code>label</code> with <code>for</code> in forms for screen
+        readers.
+      </li>
+    </ul>
+
+    <h2>✅ Section 16: Debugging Tips</h2>
+    <ul>
+      <li>
+        Use <strong>Inspect Element</strong> (Right click → Inspect) to test
+        HTML/CSS live.
+      </li>
+      <li>Use the <strong>Console</strong> tab for error checking.</li>
+      <li>
+        Use <strong>Responsive Mode</strong> in browser tools to test design in
+        mobile view.
+      </li>
+    </ul>
+
+    <div class="note">
+      <p>
+        📘 This complete guide is beginner-friendly. You can save this as a
+        <strong>PDF</strong>, use it daily, and skip rewatching long videos.
+      </p>
+      <p>Let me know if you want:</p>
+      <ul>
+        <li>🔸 Mini HTML/CSS projects</li>
+        <li>🔸 JavaScript version next</li>
+        <li>🔸 More real-life use-case examples</li>
+      </ul>
+    </div>
+  </body>
+</html>
